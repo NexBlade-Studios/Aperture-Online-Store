@@ -175,6 +175,7 @@ body {
     margin-bottom: 10px;
     padding: 0 10px;
     display: flex;
+    z-index: 4;
 }
 
 .header ul li a {
