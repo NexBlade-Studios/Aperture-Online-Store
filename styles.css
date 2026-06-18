@@ -103,8 +103,71 @@ body {
     transition: 0.5s ease;
 }
 
+.popular-reviews {
+    background-image: url("images/Catwalks-Key-Art.png");
+    background-size: 100vw;
+    box-shadow: 0 0 20px black inset;
+    position: relative;
+    padding: 2rem;
+}
+
+.popular-reviews h2 {
+    max-width: fit-content;
+    font-size: xx-large;
+    color: white;
+}
+
+.popular-reviews ol {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+    overflow-x: scroll;
+    color: white;
+}
+
+.popular-reviews li {
+    display: flex;
+    align-items: center;
+    background-color: #2e343d5e;
+    padding: 15px;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    height: 20vw;
+    min-width: 50vw;
+    box-shadow: 0 0 20px white inset;
+}
+
+.popular-reviews li div {
+    flex: 1;
+    text-align: center;
+}
+
+#review-image {
+    width: auto;
+    height: 18vw;
+    transition: 0.5s ease;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.popular-reviews li:hover  #review-image{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.popular-reviews li:hover {
+    box-shadow: 0 0 20px rgb(153, 212, 227) inset;
+}
+
 .header {
     position: relative;
+    background-color: #2e343d;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    align-items: end;               
+    justify-content: space-between;   
 }
 
 .header ul {
@@ -129,7 +192,7 @@ body {
     text-decoration: underline;
 }
 
-#logo h1 {
+.header-logo h1 {
     font-family: Univers-75-Black;
     font-style: oblique;
     letter-spacing: 7px;
@@ -139,7 +202,7 @@ body {
     color: white;
 }
 
-#logo h3 {
+.header-logo h3 {
     font-family: Univers-Light;
     letter-spacing: 10px;
     font-size: 1rem;
@@ -148,20 +211,20 @@ body {
     color: white;
 }
 
-#logo img {
+.header-logo img {
     width: 4.5rem;
     height: auto;
     filter: invert(100%);
 }
 
-#logo .logo-text {
+.header-logo .logo-text {
     display: inline-block;
     margin-left: -15px;
     position: static;
     transform: translateY(-7.5px);
 }
 
-.logo-wrapper {
+.header-logo {
     cursor: pointer;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -169,18 +232,61 @@ body {
     transition: 0.5s ease;
 }
 
-.logo-wrapper:hover {
+.header-logo:hover {
     transform: scale(1.05);
     transition: 0.5s ease;
 }
 
-.header {
-    background-color: #2e343d;
+.footer-logo h1 {
+    font-family: Univers-75-Black;
+    font-style: oblique;
+    letter-spacing: 3.5px;
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+}
+
+.footer-logo h3 {
+    font-family: Univers-Light;
+    letter-spacing: 5px;
+    font-size: 0.5rem;
+    margin-top: -2.5px;
+    margin-left: 8.5px;
+    color: white;
+}
+
+.footer-logo img {
+    width: 2.25rem;
+    height: auto;
+    filter: invert(100%);
+}
+
+.footer-logo .logo-text {
+    display: inline-block;
+    margin-left: -7.5px;
+    position: static;
+    transform: translateY(-3.75px);
+}
+
+.footer-logo {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    transition: 0.5s ease;
+}
+
+.footer {
+    background-color: black;
     padding-top: 1px;
     padding-bottom: 1px;
     display: flex;
-    align-items: end;               
-    justify-content: space-between;   
+    align-items: end;
+    justify-content: end;
+}
+.footer h2 {
+    color: white;
 }
 
 .dropdown-btn {
