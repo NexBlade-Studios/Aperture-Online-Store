@@ -13,9 +13,14 @@
     src: url(univers-lt-49.otf)
 }
 
+:root {
+    --review-card-width: 50vw;
+}
+
 body {
     font-family: Univers-Light;
     margin: 0;
+    width: 100%;
 }
 
 .hero {
@@ -108,20 +113,42 @@ body {
     background-size: 100vw;
     box-shadow: 0 0 20px black inset;
     position: relative;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .popular-reviews h2 {
     max-width: fit-content;
     font-size: xx-large;
     color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.popular-reviews ol {
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5%,
+        black 90%,
+        transparent
+    );
+}
+
+.carousel {
     display: flex;
     gap: 2rem;
     padding: 20px;
-    overflow-x: scroll;
     color: white;
 }
 
@@ -129,7 +156,7 @@ body {
     display: flex;
     align-items: center;
     background-color: #2e343d5e;
-    padding: 15px;
+    padding: 2rem;
     border-radius: 0.5rem;
     text-align: center;
     cursor: pointer;
@@ -151,13 +178,17 @@ body {
     border-radius: 1.5rem;
 }
 
-.popular-reviews li:hover  #review-image{
+.popular-reviews li:hover  #review-image {
     transform: scale(1.05);
     transition: 0.5s ease;
 }
 
 .popular-reviews li:hover {
     box-shadow: 0 0 20px rgb(153, 212, 227) inset;
+}
+
+.carousel:hover {
+    animation-play-state: paused;
 }
 
 .header {
@@ -283,11 +314,25 @@ body {
     padding-top: 1px;
     padding-bottom: 1px;
     display: flex;
+    justify-content: space-between;
     align-items: end;
-    justify-content: end;
 }
-.footer h2 {
+.links h3 {
     color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.links h3:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
 }
 
 .dropdown-btn {
@@ -313,4 +358,11 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media(max-width: 1000px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
 }
