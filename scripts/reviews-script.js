@@ -3,7 +3,7 @@ const carousel = document.querySelector(".carousel");
 carousel.innerHTML += carousel.innerHTML;
 
 let x = 0;
-let speed = 1;
+let speed = 0.5;
 let paused = false;
 
 carousel.addEventListener("mouseenter", () => paused = true);

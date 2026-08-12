@@ -14,208 +14,52 @@
 }
 
 :root {
-    --review-card-width: 50vw;
+    --bg-color: #2e343d;
+    --clear-bg-color: #2e343d5e;
+    --blue-portal-color: #54c0f0;
+    --orange-portal-color: #fd4f09;
+    --red-turret-color: #c40203;
+    --companion-cube-color: #f48f97;
+
+    --normal-cursor: url("data:application/octet-stream;base64,AAACAAEAICAAAA8ADwCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wB3//8Ad///AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wB3//8AAAAAAAAAAAAAAAAAAAAAAHf//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AAAAAAAAAAAAAAAAAHf//wB3//8Ad///AAAAAAAAAAAAAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wAAAAAAAAAAAHf//wB3//8AAAAAAAAAAAAAAAAAd///AHf//wAAAAAAAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wAAAAAAAAAAAHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8Ad///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AAAAAAAAAAAAAAAAAHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AAAAAAAAAAAAd///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8AAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wAAAAAAAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP8AAAAA/5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wAAAAAAAAAAAHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA/wAAAAD/lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AAAAAAAAAAAAd///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAP+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8AAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA/wAAAAAAAAAA/5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wAAAAAAAAAAAHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AAAAAAAAAAAAd///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP8AAAAAAAAAAP+UAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAB3//8AAAAAAAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA/wAAAAAAAAAA/5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wAAAAAAAAAAAHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AAAAAAB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP8AAAAAAAAAAP+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8AAAAAAHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA/wAAAAAAAAAA/5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wAAAAAAd///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAA/5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP8AAAAAAAAAAP+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA/wAAAAAAAAAAAAAAAP+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP//lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA/wAAAAAAAAAA/5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAP+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAA/5QA//+UAP8AAAAAAAAAAAAAAAD/lAD//5QA/wAAAAAAAAAA/5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAAAAAAAP+UAP//lAD//5QA/wAAAAAAAAAAAAAAAP+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//5QA/wAAAAAAAAAAAAAAAAAAAAD/lAD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA//+UAP//lAD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////8P///88///+/3///ce///s53//6/t//+f7v////b////2//8/93/+v/t//r/7f/6++3/9v/t//b/7f/2223/9v/t//b/6//2++v/9v/r//d/5//7f///+3////u/z//9v6///c5v//7x3///f7///55////h///////8=");
+    --select-cursor: url("data:application/octet-stream;base64,AAACAAEAICAAAA8ADwCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wB3//8Ad///AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wB3//8Anv//AJ7//wCe//8Anv//AHf//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8Anv//AJ7//wCe//8Anv//AJ7//wCe//8Anv//AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AJ7//wCe//8Anv//AHf//wB3//8Ad///AJ7//wCe//8Anv//AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wCe//8Anv//AHf//wB3//8AAAAAAAAAAAAAAAAAd///AHf//wCe//8Anv//AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wCe//8Anv//AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8Ad///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AJ7//wCe//8Anv//AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AJ7//wCe//8Ad///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8Anv//AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wCe//8Anv//AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP//2QD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wCe//8Anv//AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA///ZAP//lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AJ7//wCe//8Ad///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8Anv//AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA///ZAP//2QD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wCe//8Anv//AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA///ZAP//lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AJ7//wCe//8Ad///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP//2QD//9kA//+UAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAAAAP8AAAAAAAAAAAB3//8Anv//AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA///ZAP//2QD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wCe//8Anv//AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA///ZAP//lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AJ7//wB3//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP//2QD//9kA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAB3//8Anv//AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA///ZAP//2QD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf//wCe//8Ad///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA///ZAP//2QD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd///AHf//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA///ZAP//lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP//2QD//9kA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA///ZAP//2QD//9kA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP+UAP//lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA///ZAP//2QD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA///ZAP//2QD//5QA//+UAP8AAAAAAAAAAAAAAAD/lAD//5QA///ZAP//2QD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA///ZAP//2QD//9kA//+UAP//lAD//5QA///ZAP//2QD//9kA//+UAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//9kA///ZAP//2QD//9kA///ZAP//2QD//9kA///ZAP//lAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/lAD//5QA///ZAP//2QD//9kA///ZAP//lAD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/5QA//+UAP//lAD//5QA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///////8P///8A///+AH///AA///g4H//4/h//+f4P////D////w//8/8H/+P/h//j/4f/4++H/8P/h//D/4f/w22H/8P/h//D/4//w++P/8P/j//B/5//4f///+H////g/z//8P4///A4P//4AH///AD///4B////h///////8=");
 }
 
 body {
     font-family: Univers-Light;
+    cursor: var(--normal-cursor), auto;
     margin: 0;
     width: 100%;
 }
 
-.hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    filter: brightness(50%);
-}
-
-.hero-text {
-    font-family: Univers-Light;
-    position: absolute;;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-#typewriter {
-    font-size: 4rem;
-}
-
-.shop-btn {
-    background-color: #2e343d5e;
-    display: inline-block;
-    opacity: 0;
-    padding: 10px 20px;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-.shop-btn:hover {
-    transform:scale(1.05);
-    text-decoration: underline;
-    transition: 0.5s ease;
-}
-
-.featured {
-    background-image: url("images/Background.png");
-    background-size: 100vw;
-    box-shadow: 0 0 20px black inset;
-    position: relative;
-    padding: 2rem;
-}
-
-.featured h2 {
-    background-color: #fbfaf9;
-    max-width: fit-content;
-    font-size: xx-large;
-}
-
-.featured ol {
-    justify-content: center;
-    display: flex;
-    gap: 2rem;
-    padding: 20px;
-}
-
-.featured li {
-    display: inline-block;
-    background-color: #2e343d5e;
-    padding: 15px;
-    border-radius: 0.5rem;
-    text-align: center;
-    cursor: pointer;
-}
-
-.featured li:hover  img{
-    transform: scale(1.12);
-    transition: 0.5s ease;
-}
-
-.featured li:hover {
-    box-shadow: #2e343d 10px 10px;
-}
-
-.featured li img {
-    width: 25vw;
-    height: auto;
-    transition: 0.5s ease;
-}
-
-.popular-reviews {
-    background-image: url("images/Catwalks-Key-Art.png");
-    background-size: 100vw;
-    box-shadow: 0 0 20px black inset;
-    position: relative;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.popular-reviews h2 {
-    max-width: fit-content;
-    font-size: xx-large;
-    color: white;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 10%,
-        black 90%,
-        transparent
-    );
-
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 5%,
-        black 90%,
-        transparent
-    );
-}
-
-.carousel {
-    display: flex;
-    gap: 2rem;
-    padding: 20px;
-    color: white;
-}
-
-.popular-reviews li {
-    display: flex;
-    align-items: center;
-    background-color: #2e343d5e;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    cursor: pointer;
-    height: 20vw;
-    min-width: 50vw;
-    box-shadow: 0 0 20px white inset;
-}
-
-.popular-reviews li div {
-    flex: 1;
-    text-align: center;
-}
-
-#review-image {
-    width: auto;
-    height: 18vw;
-    transition: 0.5s ease;
-    padding: 1rem;
-    border-radius: 1.5rem;
-}
-
-.popular-reviews li:hover  #review-image {
-    transform: scale(1.05);
-    transition: 0.5s ease;
-}
-
-.popular-reviews li:hover {
-    box-shadow: 0 0 20px rgb(153, 212, 227) inset;
-}
-
-.carousel:hover {
-    animation-play-state: paused;
-}
-
+/* NAVBAR AND HEADER */
 .header {
+    background-color: var(--bg-color);
+    display: flex;
     position: relative;
-    background-color: #2e343d;
     padding-top: 1px;
     padding-bottom: 1px;
-    display: flex;
     align-items: end;               
     justify-content: space-between;   
 }
 
 .header ul {
+    display: flex;
     list-style-type: none;
     margin-bottom: 10px;
     padding: 0 10px;
-    display: flex;
     z-index: 4;
+    cursor: var(--select-cursor), auto;
 }
 
 .header ul li a {
+    display: block;
     font-family: Univers-Light;
     font-size: 1rem;
-    display: block;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: var(--select-cursor), auto;
 }
 
 .header ul li a:hover {
@@ -251,13 +95,13 @@ body {
 
 .header-logo .logo-text {
     display: inline-block;
-    margin-left: -15px;
     position: static;
+    margin-left: -15px;
     transform: translateY(-7.5px);
 }
 
 .header-logo {
-    cursor: pointer;
+    cursor: var(--select-cursor), auto;
     margin-top: 1rem;
     margin-left: 1rem;
     width: fit-content;
@@ -269,6 +113,32 @@ body {
     transition: 0.5s ease;
 }
 
+.dropdown-btn {
+    font-family: Univers-Light;
+    font-size: 1rem;
+    cursor: var(--select-cursor), auto;
+    border: none;
+    background: none;
+    color: white;
+    padding: 14px 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    background-color: var(--clear-bg-color);
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* FOOTER */
 .footer-logo h1 {
     font-family: Univers-75-Black;
     font-style: oblique;
@@ -296,8 +166,8 @@ body {
 
 .footer-logo .logo-text {
     display: inline-block;
-    margin-left: -7.5px;
     position: static;
+    margin-left: -7.5px;
     transform: translateY(-3.75px);
 }
 
@@ -311,9 +181,9 @@ body {
 
 .footer {
     background-color: black;
+    display: flex;
     padding-top: 1px;
     padding-bottom: 1px;
-    display: flex;
     justify-content: space-between;
     align-items: end;
 }
@@ -322,7 +192,7 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    cursor: pointer;
+    cursor: var(--select-cursor), auto;
 }
 
 .links h3:hover {
@@ -335,29 +205,245 @@ body {
     display: flex;
 }
 
-.dropdown-btn {
+/* HERO SECTION */
+.hero {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.hero-text {
     font-family: Univers-Light;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: white;
-    padding: 14px 16px;
-}
-
-.dropdown-content {
-    display: none;
     position: absolute;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.dropdown-content a {
-    text-decoration: none;
-    display: block;
-    background-color: #2e343d5e;
+#typewriter {
+    font-size: 4rem;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.shop-btn {
+    background-color: var(--clear-bg-color);
+    display: inline-block;
+    opacity: 0;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    cursor: var(--select-cursor), auto;
+}
+
+.shop-btn:hover {
+    transform:scale(1.05);
+    text-decoration: underline;
+    transition: 0.5s ease;
+}
+
+/* ASHPD */
+.product-container {
+    display: flex;
+}
+
+.product-sign {
+    width: 21.25vw;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    box-shadow: 0 0 200px rgb(231, 248, 253) inset;
+}
+.product-sign h1 {
+    font-family: Univers-LT-49;
+    letter-spacing: 10px;
+    font-size: 20rem;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.product-sign p {
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-left: 1rem;
+    margin: 0;
+}
+.product-sign hr {
+    margin: 0;
+}
+
+.product-sign h3 {
+    padding-bottom: 10vw;
+    margin: 0;
+    font-weight: normal;
+}
+
+.product-sign img {
+    width: 4vw;
+    height: auto;
+}
+
+.product-display {
+    background-image: url("images/ASHPD-Key-Art.png");
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-display img {
+    width: 40vw;
+    height: auto;
+}
+
+/* FEATURED SECTION */
+.featured {
+    background-image: url("images/Background.png");
+    background-size: 100vw;
+    position: relative;
+    box-shadow: 0 0 20px black inset;
+    padding: 2rem;
+}
+
+.featured h2 {
+    background-color: #fbfaf9;
+    max-width: fit-content;
+    font-size: xx-large;
+}
+
+.featured ol {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.featured li {
+    background-color: var(--clear-bg-color);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: var(--select-cursor), auto;
+    box-shadow: 0 0 20px white inset;
+}
+
+.featured li:hover  img{
+    transform: scale(1.12);
+    transition: 0.5s ease;
+}
+
+#ASHPD:hover {
+    box-shadow: 0 0 100px var(--blue-portal-color);
+}
+
+#turret-alarm-clock:hover {
+    box-shadow: 0 0 100px var(--red-turret-color);
+}
+
+#companion-cube-paperweight:hover {
+    box-shadow: 0 0 100px var(--companion-cube-color);
+}
+
+.featured li img {
+    width: 25vw;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+/* REVIEWS PAGE */
+.popular-reviews {
+    background-image: url("images/Catwalks-Key-Art.png");
+    background-size: 100vw;
+    position: relative;
+    box-shadow: 0 0 20px black inset;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.popular-reviews h2 {
+    max-width: fit-content;
+    font-size: xx-large;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.popular-reviews p {
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5%,
+        black 90%,
+        transparent
+    );
+}
+
+.carousel {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+    color: white;
+}
+
+.popular-reviews li {
+    background-color: var(--clear-bg-color);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: var(--select-cursor), auto;
+    height: 20vw;
+    min-width: 50vw;
+    box-shadow: 0 0 20px white inset;
+}
+
+.popular-reviews li div {
+    flex: 1;
+    text-align: center;
+}
+
+#review-image {
+    width: auto;
+    height: 18vw;
+    transition: 0.5s ease;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.popular-reviews li:hover  #review-image {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.popular-reviews li:hover {
+    box-shadow: 0 0 20px var(--blue-portal-color) inset;
+}
+
+.carousel:hover {
+    animation-play-state: paused;
 }
 
 @media(max-width: 1000px) {
