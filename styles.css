@@ -111,6 +111,7 @@ body {
 .header-logo:hover {
     transform: scale(1.05);
     transition: 0.5s ease;
+    filter: drop-shadow(0 0 3px rgb(231, 248, 253));
 }
 
 .dropdown-btn {
@@ -238,15 +239,30 @@ body {
     padding: 10px 20px;
     border-radius: 0.5rem;
     cursor: var(--select-cursor), auto;
+    transition: 0.5s ease;
 }
 
 .shop-btn:hover {
     transform:scale(1.05);
     text-decoration: underline;
-    transition: 0.5s ease;
 }
 
-/* ASHPD */
+/* Products */
+#ASHPD:hover {
+    filter: drop-shadow(0 20px 20px var(--blue-portal-color));
+}
+#long-fall-boots:hover {
+    filter: drop-shadow(0 20px 20px var(--orange-portal-color));
+}
+#companion-cube:hover {
+    filter: drop-shadow(0 20px 20px var(--companion-cube-color));
+}
+#turret:hover {
+    filter: drop-shadow(0 20px 20px var(--red-turret-color));
+}
+#cake:hover {
+    filter: drop-shadow(0 20px 20px white);
+}
 .product-sign {
     width: 21.25vw;
     padding-left: 5rem;
@@ -336,6 +352,7 @@ body {
 .product-display img {
     width: 40vw;
     height: auto;
+    transition: 0.1s ease;
 }
 
 .product-display h1 {
@@ -349,6 +366,23 @@ body {
 .product-display p {
     margin: 2rem;
     text-align: center;
+}
+
+.buy-btn {
+    font-family: Univers-Light;
+    color: white;
+    background-color: var(--clear-bg-color);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    border-width: 0;
+    cursor: var(--select-cursor), auto;
+    transition: 0.5s ease;
+}
+
+.buy-btn:hover {
+    transform:scale(1.05);
+    text-decoration: underline;
 }
 
 .product-container {
@@ -408,16 +442,6 @@ body {
     transition: 0.5s ease;
 }
 
-#turret-alarm-clock:hover {
-    box-shadow: 0 0 100px var(--red-turret-color), 0 0 20px white inset;
-}
-#ASHPD:hover {
-    box-shadow: 0 0 100px var(--blue-portal-color), 0 0 20px white inset;
-}
-#companion-cube-paperweight:hover {
-    box-shadow: 0 0 100px var(--companion-cube-color), 0 0 20px white inset;
-}
-
 .featured li img {
     width: 25vw;
     height: auto;
@@ -431,7 +455,17 @@ body {
     position: relative;
     box-shadow: 0 0 20px black inset;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+}
+
+.popular-reviews h1 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.popular-reviews h1 span {
+    font-weight: bold;
 }
 
 .popular-reviews h2 {
@@ -504,14 +538,48 @@ body {
 .popular-reviews li:hover  #review-image {
     transform: scale(1.05);
     transition: 0.5s ease;
+    filter: drop-shadow(0 0 20px black);
+
 }
 
-.popular-reviews li:hover {
-    box-shadow: 0 0 35px var(--blue-portal-color), 0 0 20px var(--bg-color);
+.popular-reviews li:hover .star {
+    filter: drop-shadow(0 0 5px rgb(255, 196, 0));
+    transition: 0.5 ease;
 }
 
 .carousel:hover {
     animation-play-state: paused;
+}
+
+.awards h1 {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.awards h1 span {
+    font-weight: bold;
+}
+
+.awards h2:hover {
+    box-shadow: 0 0 35px var(--orange-portal-color);
+}
+
+.awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards h2 {
+    padding: 0;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    background-color: var(--orange-portal-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-weight: lighter;
 }
 
 @media(max-width: 1000px) {

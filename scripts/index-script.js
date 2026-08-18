@@ -20,6 +20,7 @@ function typeWriter() {
     if (document.getElementById("subtext").textContent == subtext) {
         document.getElementById("shop-btn").style.transition = "opacity 3s ease";
         document.getElementById("shop-btn").style.opacity = 1;
+        document.getElementById("shop-btn").style.transition = "0.5s ease";
     }
 }
 typeWriter();  
