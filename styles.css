@@ -30,6 +30,7 @@ body {
     cursor: var(--normal-cursor), auto;
     margin: 0;
     width: 100%;
+    background-color: black;
 }
 
 /* NAVBAR AND HEADER */
@@ -677,6 +678,46 @@ body {
     background-repeat: no-repeat;
     box-shadow: 0 0 20px black inset;
     filter: brightness(50%);
+    z-index: -1;
+}
+
+/* FAQ */
+.faq {
+    background-size: 100vw;
+    position: relative;
+    box-shadow: 0 0 20px black inset;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.faq p {
+    font-weight: normal;
+}
+.faq h2 {
+    background-color: #fbfaf9;
+    max-width: fit-content;
+    font-size: xx-large;
+    margin: 2rem;
+}
+.faq details {
+    margin: 2rem;
+}
+.faq details summary {
+    font-size: large;
+    font-weight: bold;
+    cursor: var(--select-cursor);
+}
+.faq details a {
+    color: black;
+    cursor: var(--select-cursor), auto;
+}
+.faq::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background-image: url("images/Background.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px black inset;
     z-index: -1;
 }
 
