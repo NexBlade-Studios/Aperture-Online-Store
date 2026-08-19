@@ -582,6 +582,114 @@ body {
     font-weight: lighter;
 }
 
+/* ABOUT */
+.about {
+    background-size: 100vw;
+    position: relative;
+    box-shadow: 0 0 20px black inset;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.about-text img {
+    width: 20vw;
+    height: auto;
+    filter: drop-shadow(0 0 20px black)
+}
+
+.about-container {
+    font-family: Univers-Light;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-text h1 {
+    font-family: Univers-Light;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.about-text {
+    width: 50vw;
+}
+.graph {
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.bar-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+.bar-container img {
+    width: auto;
+    height: 75px;
+    transform: translateY(-100px);
+    position: absolute;
+}
+
+.bar {
+    width: 100px;
+    height: var(--height);
+    background-color: var(--color);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    animation: grow-bar 1.5s ease-out forwards;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    transition: 0.5s ease;
+}
+
+.bar span {
+    color: black;
+}
+
+#bar-logo {
+    filter: invert(100%);
+}
+
+#aperture-science:hover {
+    filter: drop-shadow(0 0 20px var(--blue-portal-color))
+}
+
+#black-mesa:hover {
+    filter:drop-shadow(0 0 20px var(--orange-portal-color))
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background-image: url("images/Portal-Key-Art.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px black inset;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+@keyframes grow-bar {
+    from {
+        transfrom: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
 @media(max-width: 1000px) {
     html, body {
         height: 100%;
