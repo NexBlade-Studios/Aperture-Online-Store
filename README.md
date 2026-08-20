@@ -86,3 +86,5 @@ This project is not affiliated with or endorsed by Valve.
 [Portal-themed cursor](https://www.rw-designer.com/cursor-set/portal2crosshair#google_vignette)
 
 [Test Chamber Icons](https://theportalwiki.com/wiki/Category:Chamber_info_icons)
+
+[Aperture favicon](https://commons.wikimedia.org/wiki/File:Aperture_Science.svg)
