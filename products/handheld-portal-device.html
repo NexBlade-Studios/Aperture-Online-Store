@@ -17,7 +17,7 @@
                 <h3>ONLINE STORE</h3>
             </div>
         </div>
-        <ul>
+        <ul class="header-menu">
             <li>
                 <div class="dropdown">
                     <a class="dropdown-btn" href="..\products.html"><strong>PRODUCTS</strong></a>
@@ -34,25 +34,28 @@
             <li><a href="..\about.html"><strong>ABOUT</strong></a></li>
             <li><a href="..\faq.html"><strong>FAQ</strong></a></li>
         </ul>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
     </header>
     <div class="product-container" style="--product-background: url('../images/ASHPD-Key-Art.png');">
         <div class="product-sign">
+            <button class="sign-toggle" onclick="toggleSign()">‹</button>
+
             <h1>01</h1>
             <p>01/05</p>
             <hr />
             <h3>|||||</h3>
             <hr />
             <br />
-            <img src="../images/sign/179px-Chamber_icon_laser_field.png">
-            <img src="../images/sign/180px-Chamber_icon_fling_enter_on.png">
-            <img src="../images/sign/180px-Chamber_icon_laser_hazard.png">
-            <img src="../images/sign/180px-Chamber_icon_cake.png">
-            <img src="../images/sign/180px-Chamber_icon_faith_plate_on.png">
-            <img src="../images/sign/180px-Chamber_icon_dirty_water_on.png">
-            <img src="../images/sign/180px-Chamber_icon_bridge_shield.png">
-            <img src="../images/sign/180px-Chamber_icon_light_bridge_on.png">
-            <img src="../images/sign/180px-Chamber_icon_cube_button.png">
-            <img src="../images/sign/179px-Chamber_icon_pass_cube.png">
+            <img src="../images/sign/179px-Chamber_icon_laser_field.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_fling_enter_on.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_laser_hazard.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_cake.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_faith_plate_on.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_dirty_water_on.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_bridge_shield.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_light_bridge_on.png" class="sign-icon">
+            <img src="../images/sign/180px-Chamber_icon_cube_button.png" class="sign-icon">
+            <img src="../images/sign/179px-Chamber_icon_pass_cube.png" class="sign-icon">
 
             <div class="sign-logo">
                 <img src="..\images\Aperture-Science-Logo.png" alt="Aperture-Science-Logo">
@@ -98,6 +101,7 @@
         </div>
     </footer>
     <script src="../scripts/product-script.js" defer></script>
+    <script src="../scripts/hamburger-menu-script.js" defer></script>
 </body>
 
 </html>

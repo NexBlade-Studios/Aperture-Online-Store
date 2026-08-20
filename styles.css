@@ -44,7 +44,7 @@ body {
     justify-content: space-between;
 }
 
-.header ul {
+.header-menu {
     display: flex;
     list-style-type: none;
     margin-bottom: 10px;
@@ -53,7 +53,7 @@ body {
     cursor: var(--select-cursor), auto;
 }
 
-.header ul li a {
+.header-menu li a {
     display: block;
     font-family: Univers-Light;
     font-size: 1rem;
@@ -63,7 +63,7 @@ body {
     cursor: var(--select-cursor), auto;
 }
 
-.header ul li a:hover {
+.header-menu li a:hover {
     transform: scale(1.05);
     transition: 0.5s ease;
     text-decoration: underline;
@@ -137,6 +137,17 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: var(--select-cursor), auto;
+    margin-right: 1rem;
+    align-self: center;
 }
 
 /* FOOTER */
@@ -363,7 +374,7 @@ body {
     font-weight: normal;
 }
 
-.product-sign img {
+.sign-icon {
     width: 4vw;
     height: auto;
 }
@@ -478,11 +489,16 @@ body {
     padding: 5rem;
     border-radius: 0.5rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
 }
 
 .popup img {
     width: 20vw;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .popup-close {
@@ -587,8 +603,9 @@ body {
 
 .popular-reviews p {
     color: white;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: clamp(0.5rem, 2vw, 2rem);
+    padding-right: clamp(0.5rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
 
 .carousel-container {
@@ -648,6 +665,13 @@ body {
 
 .star {
     transition: 0.5 ease;
+    width: 2vw;
+    height: auto;
+}
+
+.star-blank {
+    width: 2vw;
+    height: auto;
 }
 
 .popular-reviews li:hover .star {
@@ -858,5 +882,256 @@ body {
 
     to {
         transform: scaleY(1);
+    }
+}
+
+@media (max-width: 1200px) {
+    .popular-reviews li {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        position: relative;
+    }
+
+    .header-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        background-color: #2e343d93;
+        z-index: 10;
+        text-align: end;
+    }
+
+    .header-menu.show {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .header-menu li a:hover {
+        text-decoration: underline;
+        transform: none;
+        transition: none;
+    }
+
+    .product-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .product-sign {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        z-index: 5;
+
+        width: 350px;
+        box-sizing: border-box;
+
+        transition: transform 0.5s ease;
+    }
+
+    .product-sign.hidden {
+        transform: translateX(-101%);
+    }
+
+    .sign-toggle {
+        position: absolute;
+        right: -40px;
+        top: 50%;
+
+        width: 40px;
+        height: 80px;
+
+        border: none;
+        background-color: white;
+        color: black;
+
+        font-size: 2rem;
+        cursor: var(--select-cursor), auto;
+
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .product-display h1 {
+        text-align: center;
+        background: none;
+    }
+
+    .sign-icon {
+        width: 5vw;
+        height: auto;
+    }
+
+    .popup {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-logo {
+        display: none;
+    }
+
+    .header-logo h1 {
+        font-family: Univers-75-Black;
+        font-style: oblique;
+        letter-spacing: 3.5px;
+        font-size: 1rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: white;
+    }
+
+    .header-logo h3 {
+        font-family: Univers-Light;
+        letter-spacing: 5px;
+        font-size: 0.5rem;
+        margin-top: -2.5px;
+        margin-left: 8.5px;
+        color: white;
+    }
+
+    .header-logo img {
+        width: 2.25rem;
+        height: auto;
+        filter: invert(100%);
+    }
+
+    .header-logo .logo-text {
+        display: inline-block;
+        position: static;
+        margin-left: -7.5px;
+        transform: translateY(-3.75px);
+    }
+
+    .header-logo {
+        cursor: var(--select-cursor), auto;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        width: fit-content;
+        transition: 0.25s ease;
+    }
+
+    #typewriter {
+        font-size: 2rem;
+    }
+
+    #subtext {
+        display: none;
+    }
+
+    .shop-btn {
+        margin-top: 1rem;
+    }
+
+    .featured ol {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured li {
+        width: fit-content;
+    }
+
+    .featured li img {
+        width: 50vw;
+        height: auto;
+    }
+
+    .featured li p {
+        display: none;
+    }
+
+    .product-grid-square p {
+        display: none;
+    }
+
+    .product-grid-square img {
+        width: 30vw;
+        height: auto;
+    }
+
+    .product-grid-square {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popular-reviews p {
+        display: none;
+    }
+
+    .popular-reviews li {
+        width: 50vw;
+    }
+
+    #review-image {
+        height: 45vw;
+        width: auto;
+    }
+
+    .star {
+        width: 5vw;
+        height: auto;
+    }
+
+    .star-blank {
+        width: 5vw;
+        height: auto;
+    }
+
+    .awards {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popular-reviews h1 {
+        font-size: 2rem;
+    }
+
+    .awards h1 {
+        margin-bottom: 0;
+    }
+
+    .awards h2 {
+        margin: 2rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-container h1 {
+        font-size: 2rem;
+    }
+
+    .product-sign {
+        display: none;
+    }
+
+    .product-display {
+        min-height: 100vh;
+        position: relative;
+        margin: 2rem;
     }
 }

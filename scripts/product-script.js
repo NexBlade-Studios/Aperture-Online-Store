@@ -33,3 +33,21 @@ function popupClose() {
     popupContainer.style.opacity = "0";
     popupContainer.style.zIndex = -2;
 }
+
+function toggleSign() {
+    document.querySelector(".product-sign").classList.toggle("hidden");
+}
+
+function sizeProductContainer() {
+    const container = document.querySelector(".product-container");
+    const sign = document.querySelector(".product-sign");
+
+    if (window.innerWidth <= 1000) {
+        container.style.minHeight = sign.offsetHeight + "px";
+    } else {
+        container.style.minHeight = "";
+    }
+}
+
+window.addEventListener("load", sizeProductContainer);
+window.addEventListener("resize", sizeProductContainer);
