@@ -3,6 +3,20 @@
 
 *A fictional website that sells items from the Portal franchise as if they were real products.*
 
+## Preview Screenshots
+
+![Hero Section](screenshots/hero.png)
+
+![Featured Section](screenshots/featured.png)
+
+![Product Preview](screenshots/product.png)
+
+![Popular Reviews](screenshots/reviews.png)
+
+![About Section](screenshots/about.png)
+
+![FAQ](screenshots/faq.png)
+
 ## How did I come up with this project?
 
 At school I was tasked with creating a simple website design, and due to my love for the Portal franchise and the various advertisements that Valve has put out such as the Portal investment opportunity series of videos, I thought is would be fun to create a website where products from the Portal franchise are sold as if they were real products.
