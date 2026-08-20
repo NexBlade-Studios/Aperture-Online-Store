@@ -514,6 +514,10 @@ body {
     transition: 0.25s ease;
 }
 
+.sign-toggle {
+    display: none;
+}
+
 .popup-close:hover {
     transform: scale(1.12);
 }
@@ -956,6 +960,7 @@ body {
     }
 
     .sign-toggle {
+        display: block;
         position: absolute;
         right: -40px;
         top: 50%;
