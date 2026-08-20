@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Turret</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-logo" onclick="window.location.href='../index.html'">
@@ -37,10 +39,10 @@
         <div class="product-sign">
             <h1>03</h1>
             <p>03/05</p>
-            <hr/>
+            <hr />
             <h3>|||||||||||||||</h3>
-            <hr/>
-            <br/>
+            <hr />
+            <br />
             <img src="../images/sign/179px-Chamber_icon_laser_field_on.png">
             <img src="../images/sign/180px-Chamber_icon_fling_enter.png">
             <img src="../images/sign/180px-Chamber_icon_laser_hazard_on.png">
@@ -60,14 +62,25 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="product-display">
             <img src="../images/Turret.png" id="turret">
             <h1>Sentry Turret</h1>
             <p>
-                Introducing the consumer version of our most popular military-grade product: The Turret. How are they so effective? Well, we fire the whole bullet. That's 65% more bullet per bullet. We box 'em up and ship 'em straight to your doorstep, so you can protect the things that matter most...
+                Introducing the consumer version of our most popular military-grade product: The Turret. How are they so
+                effective? Well, we fire the whole bullet. That's 65% more bullet per bullet. We box 'em up and ship 'em
+                straight to your doorstep, so you can protect the things that matter most...
             </p>
-            <div class="buy-btn" onclick="window.location.href='../products.html'"><strong>BUY NOW</strong></div>            
+            <div class="buy-btn" onclick="popup()"><strong>BUY NOW</strong></div>
+        </div>
+    </div>
+    <div class="popup-container">
+        <div class="popup">
+            <div>
+                <p class="popup-text"></p>
+                <img src="../images/Portal-Logo.png" alt="">
+            </div>
+            <div class="popup-close" onclick="popupClose()">✖</div>
         </div>
     </div>
     <footer class="footer">
@@ -86,4 +99,5 @@
     </footer>
     <script src="../scripts/product-script.js" defer></script>
 </body>
+
 </html>

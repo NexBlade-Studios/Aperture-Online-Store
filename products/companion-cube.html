@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Companion Cube</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-logo" onclick="window.location.href='../index.html'">
@@ -37,10 +39,10 @@
         <div class="product-sign">
             <h1>04</h1>
             <p>04/05</p>
-            <hr/>
+            <hr />
             <h3>||||||||||||||||||||</h3>
-            <hr/>
-            <br/>
+            <hr />
+            <br />
             <img src="../images/sign/179px-Chamber_icon_laser_field_on.png">
             <img src="../images/sign/180px-Chamber_icon_fling_enter.png">
             <img src="../images/sign/180px-Chamber_icon_laser_hazard.png">
@@ -60,14 +62,25 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="product-display">
             <img src="../images/Companion-Cube.png" id="companion-cube">
             <h1>Companion Cube</h1>
             <p>
-                Before you get too ahead of yourself no the companion cube does not have a soul and that disembodied voice you are hearing is all in your head. The Companion Cube is incredibly useful for solving puzzles, but has the unintended side effect of attachment issues...
+                Before you get too ahead of yourself no the companion cube does not have a soul and that disembodied
+                voice you are hearing is all in your head. The Companion Cube is incredibly useful for solving puzzles,
+                but has the unintended side effect of attachment issues...
             </p>
-            <div class="buy-btn" onclick="window.location.href='../products.html'"><strong>BUY NOW</strong></div>
+            <div class="buy-btn" onclick="popup()"><strong>BUY NOW</strong></div>
+        </div>
+    </div>
+    <div class="popup-container">
+        <div class="popup">
+            <div>
+                <p class="popup-text"></p>
+                <img src="../images/Portal-Logo.png" alt="">
+            </div>
+            <div class="popup-close" onclick="popupClose()">✖</div>
         </div>
     </div>
     <footer class="footer">
@@ -86,4 +99,5 @@
     </footer>
     <script src="../scripts/product-script.js" defer></script>
 </body>
+
 </html>

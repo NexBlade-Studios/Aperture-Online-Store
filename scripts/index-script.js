@@ -16,7 +16,7 @@ function typeWriter() {
             sub_index++;
             setTimeout(typeWriter, speed);
         }
-    } 
+    }
     if (document.getElementById("subtext").textContent == subtext) {
         document.getElementById("shop-btn").style.transition = "opacity 3s ease";
         document.getElementById("shop-btn").style.opacity = 1;

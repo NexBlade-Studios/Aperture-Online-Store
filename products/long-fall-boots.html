@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Long Fall Boots</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-logo" onclick="window.location.href='../index.html'">
@@ -37,10 +39,10 @@
         <div class="product-sign">
             <h1>02</h1>
             <p>02/05</p>
-            <hr/>
+            <hr />
             <h3>||||||||||</h3>
-            <hr/>
-            <br/>
+            <hr />
+            <br />
             <img src="../images/sign/179px-Chamber_icon_laser_field_on.png">
             <img src="../images/sign/180px-Chamber_icon_fling_enter_on.png">
             <img src="../images/sign/180px-Chamber_icon_laser_hazard.png">
@@ -60,14 +62,25 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="product-display">
             <img src="../images/Long-Fall-Boots.png" id="long-fall-boots">
             <h1>Long Fall Boots</h1>
             <p>
-                The Long Falls Boots, think of them as a foot-based suit of armour for the portal device, saves a lot of expensive equipment getting broken. And yes it does stop test subjects from breaking their legs but that's besides the point...
+                The Long Falls Boots, think of them as a foot-based suit of armour for the portal device, saves a lot of
+                expensive equipment getting broken. And yes it does stop test subjects from breaking their legs but
+                that's besides the point...
             </p>
-            <div class="buy-btn" onclick="window.location.href='../products.html'"><strong>BUY NOW</strong></div>
+            <div class="buy-btn" onclick="popup()"><strong>BUY NOW</strong></div>
+        </div>
+    </div>
+    <div class="popup-container">
+        <div class="popup">
+            <div>
+                <p class="popup-text"></p>
+                <img src="../images/Portal-Logo.png" alt="">
+            </div>
+            <div class="popup-close" onclick="popupClose()">✖</div>
         </div>
     </div>
     <footer class="footer">
@@ -86,4 +99,5 @@
     </footer>
     <script src="../scripts/product-script.js" defer></script>
 </body>
+
 </html>

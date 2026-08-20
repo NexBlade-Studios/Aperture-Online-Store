@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Handheld Portal Device</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-logo" onclick="window.location.href='../index.html'">
@@ -37,10 +39,10 @@
         <div class="product-sign">
             <h1>01</h1>
             <p>01/05</p>
-            <hr/>
+            <hr />
             <h3>|||||</h3>
-            <hr/>
-            <br/>
+            <hr />
+            <br />
             <img src="../images/sign/179px-Chamber_icon_laser_field.png">
             <img src="../images/sign/180px-Chamber_icon_fling_enter_on.png">
             <img src="../images/sign/180px-Chamber_icon_laser_hazard.png">
@@ -60,14 +62,25 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="product-display">
             <img src="../images/ASHPD.png" id="ASHPD">
             <h1>Aperture Science Handheld Portal Device</h1>
             <p>
-                Who doesn't love portals? The Aperture Science Handheld Portal Device is just the thing for you, as long as your walls are coated in moon rocks that is. Try not to break it, as it might result in a trip to our Enrichment centre. I hear the one in charge has an obsession with neurotoxin...
+                Who doesn't love portals? The Aperture Science Handheld Portal Device is just the thing for you, as long
+                as your walls are coated in moon rocks that is. Try not to break it, as it might result in a trip to our
+                Enrichment centre. I hear the one in charge has an obsession with neurotoxin...
             </p>
-            <div class="buy-btn" onclick="window.location.href='../products.html'"><strong>BUY NOW</strong></div>
+            <div class="buy-btn" onclick="popup()"><strong>BUY NOW</strong></div>
+        </div>
+    </div>
+    <div class="popup-container">
+        <div class="popup">
+            <div>
+                <p class="popup-text"></p>
+                <img src="../images/Portal-Logo.png" alt="">
+            </div>
+            <div class="popup-close" onclick="popupClose()">✖</div>
         </div>
     </div>
     <footer class="footer">
@@ -86,4 +99,5 @@
     </footer>
     <script src="../scripts/product-script.js" defer></script>
 </body>
+
 </html>

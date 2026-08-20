@@ -38,10 +38,10 @@ body {
     background-color: var(--bg-color);
     display: flex;
     position: relative;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    align-items: end;               
-    justify-content: space-between;   
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    align-items: end;
+    justify-content: space-between;
 }
 
 .header ul {
@@ -104,14 +104,13 @@ body {
 .header-logo {
     cursor: var(--select-cursor), auto;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
     width: fit-content;
-    transition: 0.5s ease;
+    transition: 0.25s ease;
 }
 
 .header-logo:hover {
     transform: scale(1.05);
-    transition: 0.5s ease;
     filter: drop-shadow(0 0 3px rgb(231, 248, 253));
 }
 
@@ -178,7 +177,6 @@ body {
     margin-bottom: 0.5rem;
     margin-top: 1rem;
     width: fit-content;
-    transition: 0.5s ease;
 }
 
 .footer {
@@ -189,6 +187,7 @@ body {
     justify-content: space-between;
     align-items: end;
 }
+
 .links h3 {
     color: white;
     margin-left: 1rem;
@@ -244,26 +243,92 @@ body {
 }
 
 .shop-btn:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
     text-decoration: underline;
+}
+
+/* Product Page */
+.product-page {
+    background-size: 100vw;
+    position: relative;
+    box-shadow: 0 0 20px black inset;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.product-page::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background-image: url("images/Product-Key-Art.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px black inset;
+    z-index: -1;
+}
+
+.product-page h1 {
+    max-width: fit-content;
+    font-size: xx-large;
+    margin: 2rem;
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-grid img {
+    width: 25vw;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.product-grid-square {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    background-color: var(--clear-bg-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    cursor: var(--select-cursor), auto;
+}
+
+.product-grid-square p {
+    color: white;
+    text-align: center;
+    width: 25vw;
+}
+
+.product-grid-square img:hover {
+    transform: scale(1.12);
 }
 
 /* Products */
 #ASHPD:hover {
     filter: drop-shadow(0 20px 20px var(--blue-portal-color));
 }
+
 #long-fall-boots:hover {
     filter: drop-shadow(0 20px 20px var(--orange-portal-color));
 }
+
 #companion-cube:hover {
     filter: drop-shadow(0 20px 20px var(--companion-cube-color));
 }
+
 #turret:hover {
     filter: drop-shadow(0 20px 20px var(--red-turret-color));
 }
+
 #cake:hover {
     filter: drop-shadow(0 20px 20px white);
 }
+
 .product-sign {
     width: 21.25vw;
     padding-left: 5rem;
@@ -272,6 +337,7 @@ body {
     background-color: white;
     box-shadow: 0 0 200px rgb(231, 248, 253) inset;
 }
+
 .product-sign h1 {
     font-family: Univers-LT-49;
     letter-spacing: 10px;
@@ -286,6 +352,7 @@ body {
     padding-left: 1rem;
     margin: 0;
 }
+
 .product-sign hr {
     margin: 0;
 }
@@ -353,7 +420,7 @@ body {
 .product-display img {
     width: 40vw;
     height: auto;
-    transition: 0.1s ease;
+    transition: 0.25s ease;
 }
 
 .product-display h1 {
@@ -382,7 +449,7 @@ body {
 }
 
 .buy-btn:hover {
-    transform:scale(1.05);
+    transform: scale(1.05);
     text-decoration: underline;
 }
 
@@ -391,6 +458,48 @@ body {
     position: relative;
     flex: 1;
     overflow: hidden;
+}
+
+.popup-container {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    opacity: 0;
+}
+
+.popup {
+    position: relative;
+    background-color: var(--clear-bg-color);
+    font-size: larger;
+    color: white;
+    padding: 5rem;
+    border-radius: 0.5rem;
+    display: flex;
+}
+
+.popup img {
+    width: 20vw;
+    height: auto;
+}
+
+.popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0;
+    color: white;
+    cursor: var(--select-cursor), auto;
+    font-weight: lighter;
+    font-size: small;
+    transition: 0.25s ease;
+}
+
+.popup-close:hover {
+    transform: scale(1.12);
 }
 
 .product-container::before {
@@ -438,9 +547,8 @@ body {
     box-shadow: 0 0 20px white inset;
 }
 
-.featured li:hover  img{
+.featured li:hover img {
     transform: scale(1.12);
-    transition: 0.5s ease;
 }
 
 .featured li img {
@@ -451,11 +559,11 @@ body {
 
 /* REVIEWS PAGE */
 .popular-reviews {
-    background-image: url("images/Catwalks-Key-Art.png");
     background-size: 100vw;
     position: relative;
     box-shadow: 0 0 20px black inset;
     padding-top: 2rem;
+    overflow: hidden;
 }
 
 .popular-reviews h1 {
@@ -486,21 +594,17 @@ body {
 .carousel-container {
     width: 100%;
     overflow: hidden;
-    -webkit-mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 10%,
-        black 90%,
-        transparent
-    );
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
 
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 5%,
-        black 90%,
-        transparent
-    );
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 5%,
+            black 90%,
+            transparent);
 }
 
 .carousel {
@@ -536,16 +640,18 @@ body {
     border-radius: 1.5rem;
 }
 
-.popular-reviews li:hover  #review-image {
+.popular-reviews li:hover #review-image {
     transform: scale(1.05);
-    transition: 0.5s ease;
     filter: drop-shadow(0 0 20px black);
 
 }
 
+.star {
+    transition: 0.5 ease;
+}
+
 .popular-reviews li:hover .star {
     filter: drop-shadow(0 0 5px rgb(255, 196, 0));
-    transition: 0.5 ease;
 }
 
 .carousel:hover {
@@ -581,6 +687,20 @@ body {
     border-radius: 0.5rem;
     padding: 0.5rem;
     font-weight: lighter;
+    transition: 0.1s ease;
+}
+
+.popular-reviews::before {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background-image: url("images/Catwalks-Key-Art.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px black inset;
+    filter: brightness(50%);
+    z-index: -1;
 }
 
 /* ABOUT */
@@ -607,6 +727,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .about-text h1 {
     font-family: Univers-Light;
     color: white;
@@ -614,9 +735,11 @@ body {
     font-size: 4rem;
     font-weight: lighter;
 }
+
 .about-text {
     width: 50vw;
 }
+
 .graph {
     height: 400px;
     display: flex;
@@ -633,6 +756,7 @@ body {
     align-items: center;
     text-align: center;
 }
+
 .bar-container img {
     width: auto;
     height: 75px;
@@ -649,7 +773,7 @@ body {
     animation: grow-bar 1.5s ease-out forwards;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    transition: 0.5s ease;
+    transition: 0.1s ease;
 }
 
 .bar span {
@@ -665,7 +789,7 @@ body {
 }
 
 #black-mesa:hover {
-    filter:drop-shadow(0 0 20px var(--orange-portal-color))
+    filter: drop-shadow(0 0 20px var(--orange-portal-color))
 }
 
 .about::before {
@@ -689,27 +813,33 @@ body {
     padding-top: 2rem;
     overflow: hidden;
 }
+
 .faq p {
     font-weight: normal;
 }
+
 .faq h2 {
     background-color: #fbfaf9;
     max-width: fit-content;
     font-size: xx-large;
     margin: 2rem;
 }
+
 .faq details {
     margin: 2rem;
 }
+
 .faq details summary {
     font-size: large;
     font-weight: bold;
-    cursor: var(--select-cursor);
+    cursor: var(--select-cursor), auto;
 }
+
 .faq details a {
     color: black;
     cursor: var(--select-cursor), auto;
 }
+
 .faq::before {
     content: "";
     position: absolute;
@@ -728,12 +858,5 @@ body {
 
     to {
         transform: scaleY(1);
-    }
-}
-
-@media(max-width: 1000px) {
-    html, body {
-        height: 100%;
-        width: 100%;
     }
 }
